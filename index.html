@@ -297,9 +297,9 @@
       </div>
 
       <div class="section" id="outside-research">
-        <h2 class="section-title">Outside Research</h2>
+        <h2 class="section-title">Interests</h2>
         <div class="section-body">
-          <p>Outside research, I enjoy freediving and spending time with my cat Basaka (Berserker).</p>
+          <p>Outside research, I am a certified freediver and enjoy spending time with my cat Basaka (“Berserker”).</p>
           <div class="life-grid">
             <figure class="life-card">
               <div class="photo-carousel" data-carousel>
@@ -459,6 +459,7 @@
         function closeLightbox() {
           lightbox.classList.remove('open');
           lightbox.setAttribute('aria-hidden', 'true');
+          document.body.classList.remove('lightbox-open');
           lightboxImage.src = '';
           activeSlides = [];
           activeIndex = 0;
@@ -480,6 +481,7 @@
             toggleNavVisibility();
             lightbox.classList.add('open');
             lightbox.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('lightbox-open');
           });
         });
 
