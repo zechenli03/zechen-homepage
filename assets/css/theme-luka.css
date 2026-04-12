@@ -291,6 +291,25 @@ body.theme-luka .visitor-card-body {
   line-height: 1.6;
 }
 
+body.theme-luka .visitor-map-link {
+  display: block;
+}
+
+body.theme-luka .visitor-map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--luka-border);
+}
+
+body.theme-luka .visitor-map-hint {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--luka-secondary);
+  line-height: 1.45;
+}
+
 body.theme-luka .content {
   flex: 1;
   min-width: 0;
@@ -458,20 +477,29 @@ body.theme-luka .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 34px;
-  height: 34px;
+  width: 30px;
+  height: 30px;
   border: none;
   border-radius: 999px;
-  background: rgba(0, 0, 0, 0.42);
+  background: rgba(0, 0, 0, 0.30);
   color: #fff;
   cursor: pointer;
   z-index: 2;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease, background-color 0.2s ease;
 }
 
 body.theme-luka .carousel-btn:hover {
-  background: rgba(0, 0, 0, 0.58);
+  background: rgba(0, 0, 0, 0.44);
+}
+
+body.theme-luka .photo-carousel:hover .carousel-btn,
+body.theme-luka .photo-carousel:focus-within .carousel-btn {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 body.theme-luka .carousel-btn.prev {
@@ -506,7 +534,7 @@ body.theme-luka .image-lightbox {
   display: none;
   align-items: center;
   justify-content: center;
-  background: rgba(10, 10, 10, 0.72);
+  background: rgba(10, 10, 10, 0.58);
   z-index: 3000;
   padding: 40px 72px;
 }
@@ -527,16 +555,16 @@ body.theme-luka .lightbox-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 44px;
-  height: 44px;
+  width: 38px;
+  height: 38px;
   border: none;
   border-radius: 999px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.12);
   color: #fff;
-  font-size: 24px;
+  font-size: 21px;
   line-height: 1;
   cursor: pointer;
 }
@@ -550,26 +578,26 @@ body.theme-luka .lightbox-nav.next {
 }
 
 body.theme-luka .lightbox-nav:hover {
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.20);
 }
 
 body.theme-luka .lightbox-close {
   position: absolute;
   top: 16px;
   right: 16px;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   border: none;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.12);
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1;
   cursor: pointer;
 }
 
 body.theme-luka .lightbox-close:hover {
-  background: rgba(255, 255, 255, 0.28);
+  background: rgba(255, 255, 255, 0.20);
 }
 
 body.theme-luka.lightbox-open {
@@ -722,15 +750,15 @@ body.theme-luka strong {
   }
 
   body.theme-luka .carousel-btn {
-    width: 30px;
-    height: 30px;
-    font-size: 16px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
   }
 
   body.theme-luka .lightbox-nav {
-    width: 38px;
-    height: 38px;
-    font-size: 20px;
+    width: 34px;
+    height: 34px;
+    font-size: 18px;
   }
 
   body.theme-luka .image-lightbox {
