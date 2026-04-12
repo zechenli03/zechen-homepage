@@ -114,8 +114,8 @@
 
       <div class="section" id="experience">
         <h2 class="section-title">Experience</h2>
-        <div class="section-body">
-          <div class="card timeline-item">
+        <div class="section-body" id="experienceList" data-preview-count="3">
+          <div class="card timeline-item collapsible-item">
             <div class="experience-item">
               <img src="assets/img/institutions/google.png" alt="Google logo" class="institution-logo">
               <div class="experience-content">
@@ -127,7 +127,7 @@
             </div>
           </div>
 
-          <div class="card timeline-item">
+          <div class="card timeline-item collapsible-item">
             <div class="experience-item">
               <img src="assets/img/institutions/unsw.png" alt="UNSW logo" class="institution-logo">
               <div class="experience-content">
@@ -139,7 +139,7 @@
             </div>
           </div>
 
-          <div class="card timeline-item">
+          <div class="card timeline-item collapsible-item">
             <div class="experience-item">
               <img src="assets/img/institutions/sutd.png" alt="SUTD logo" class="institution-logo">
               <div class="experience-content">
@@ -151,7 +151,7 @@
             </div>
           </div>
 
-          <div class="card timeline-item">
+          <div class="card timeline-item collapsible-item">
             <div class="experience-item">
               <img src="assets/img/institutions/ku.png" alt="University of Copenhagen logo" class="institution-logo">
               <div class="experience-content">
@@ -163,7 +163,7 @@
             </div>
           </div>
 
-          <div class="card timeline-item">
+          <div class="card timeline-item collapsible-item">
             <div class="experience-item">
               <img src="assets/img/institutions/ucsd.png" alt="UC San Diego logo" class="institution-logo">
               <div class="experience-content">
@@ -174,6 +174,9 @@
               </div>
             </div>
           </div>
+          <button class="collapse-toggle" type="button" data-collapse-toggle data-target="experienceList" aria-expanded="false">
+            Show more <span aria-hidden="true">&#9662;</span>
+          </button>
         </div>
       </div>
 
@@ -182,69 +185,69 @@
         <div class="section-body">
           <div class="publications">
             <p><em>*: equal contribution</em></p>
-            <ol class="bibliography">
-              <li>
+            <ol class="bibliography" id="publicationsList" data-preview-count="3">
+              <li class="collapsible-item">
                 <div class="pub-row">
                   <div class="pub-content">
                     <div class="title">ZARA: Training-Free Motion Time-Series Reasoning via Evidence-Grounded LLM Agents.</div>
                     <div class="author"><strong>Zechen Li</strong>, Baiyu Chen, Hao Xue, Flora D. Salim.</div>
                     <div class="periodical"><em><strong>ACL Main, 2026.</strong></em></div>
-                    <div class="links"><a href="https://arxiv.org/abs/2508.04038" target="_blank" rel="noopener">Paper</a> / <a href="https://github.com/cruiseresearchgroup/ZARA" target="_blank" rel="noopener">Code</a> / <a href="#" target="_blank" rel="noopener">Project</a></div>
+                    <div class="links"><a href="https://arxiv.org/abs/2508.04038" target="_blank" rel="noopener">Paper</a> | <a href="https://github.com/cruiseresearchgroup/ZARA" target="_blank" rel="noopener">Code</a> | <a href="#" target="_blank" rel="noopener">Project</a></div>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="collapsible-item">
                 <div class="pub-row">
                   <div class="pub-content">
                     <div class="title">CoMoDo: Cross-modal Video-to-IMU Distillation for Efficient Egocentric Human Activity Recognition.</div>
                     <div class="author">Baiyu Chen, Wilson Wongso, <strong>Zechen Li</strong>, Yonchanok Khaokaew, Hao Xue, Flora Salim.</div>
                     <div class="periodical"><em><strong>IMWUT/UbiComp, 2026.</strong></em></div>
-                    <div class="links"><a href="https://arxiv.org/abs/2503.07259" target="_blank" rel="noopener">Paper</a> / <a href="https://github.com/cruiseresearchgroup/COMODO" target="_blank" rel="noopener">Code</a> / <a href="#" target="_blank" rel="noopener">Project</a></div>
+                    <div class="links"><a href="https://arxiv.org/abs/2503.07259" target="_blank" rel="noopener">Paper</a> | <a href="https://github.com/cruiseresearchgroup/COMODO" target="_blank" rel="noopener">Code</a> | <a href="#" target="_blank" rel="noopener">Project</a></div>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="collapsible-item">
                 <div class="pub-row">
                   <div class="pub-content">
                     <div class="title">SensorLLM: Aligning Large Language Models with Motion Sensors for Human Activity Recognition.</div>
                     <div class="author"><strong>Zechen Li</strong>, Shohreh Deldari, Linyao Chen, Hao Xue, Flora D. Salim.</div>
                     <div class="periodical"><em><strong>EMNLP Main, 2025.</strong></em></div>
-                    <div class="links"><a href="https://aclanthology.org/2025.emnlp-main.19/" target="_blank" rel="noopener">Paper</a> / <a href="https://github.com/cruiseresearchgroup/SensorLLM" target="_blank" rel="noopener">Code</a> / <a href="#" target="_blank" rel="noopener">Project</a></div>
+                    <div class="links"><a href="https://aclanthology.org/2025.emnlp-main.19/" target="_blank" rel="noopener">Paper</a> | <a href="https://github.com/cruiseresearchgroup/SensorLLM" target="_blank" rel="noopener">Code</a> | <a href="#" target="_blank" rel="noopener">Project</a></div>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="collapsible-item">
                 <div class="pub-row">
                   <div class="pub-content">
                     <div class="title">Enhancing Spatio-temporal Quantile Forecasting with Curriculum Learning: Lessons Learned.</div>
                     <div class="author">Du Yin, Jinliang Deng, Shuang Ao, <strong>Zechen Li</strong>, Hao Xue, Arian Prabowo, Renhe Jiang, Xuan Song, Flora Salim.</div>
                     <div class="periodical"><em><strong>SIGSPATIAL, 2024.</strong></em></div>
-                    <div class="links"><a href="https://dl.acm.org/doi/abs/10.1145/3678717.3691216" target="_blank" rel="noopener">Paper</a> / <a href="https://github.com/cruiseresearchgroup/STQCL" target="_blank" rel="noopener">Code</a></div>
+                    <div class="links"><a href="https://dl.acm.org/doi/abs/10.1145/3678717.3691216" target="_blank" rel="noopener">Paper</a> | <a href="https://github.com/cruiseresearchgroup/STQCL" target="_blank" rel="noopener">Code</a></div>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="collapsible-item">
                 <div class="pub-row">
                   <div class="pub-content">
                     <div class="title">QLEVR: A Diagnostic Dataset for Quantificational Language and Elementary Visual Reasoning.</div>
                     <div class="author"><strong>Zechen Li</strong>, Anders S&#248;gaard.</div>
                     <div class="periodical"><em><strong>NAACL Findings, 2022.</strong></em></div>
-                    <div class="links"><a href="https://aclanthology.org/2022.findings-naacl.73/" target="_blank" rel="noopener">Paper</a> / <a href="https://github.com/zechenli03/QLEVR" target="_blank" rel="noopener">Code</a></div>
+                    <div class="links"><a href="https://aclanthology.org/2022.findings-naacl.73/" target="_blank" rel="noopener">Paper</a> | <a href="https://github.com/zechenli03/QLEVR" target="_blank" rel="noopener">Code</a></div>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="collapsible-item">
                 <div class="pub-row">
                   <div class="pub-content">
                     <div class="title">Self-supervised Regularization for Text Classification.</div>
                     <div class="author">Meng Zhou*, <strong>Zechen Li*</strong>, Pengtao Xie.</div>
                     <div class="periodical"><em><strong>TACL, 2021.</strong></em></div>
-                    <div class="links"><a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00389/102845/Self-supervised-Regularization-for-Text" target="_blank" rel="noopener">Paper</a> / <a href="https://github.com/zechenli03/SSReg" target="_blank" rel="noopener">Code</a></div>
+                    <div class="links"><a href="https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00389/102845/Self-supervised-Regularization-for-Text" target="_blank" rel="noopener">Paper</a> | <a href="https://github.com/zechenli03/SSReg" target="_blank" rel="noopener">Code</a></div>
                     <div class="links">Oral Presentation at NAACL 2021</div>
                   </div>
                 </div>
               </li>
-              <li>
+              <li class="collapsible-item">
                 <div class="pub-row">
                   <div class="pub-content">
                     <div class="title">On the Generation of Medical Dialogs for COVID-19.</div>
@@ -255,6 +258,9 @@
                 </div>
               </li>
             </ol>
+            <button class="collapse-toggle" type="button" data-collapse-toggle data-target="publicationsList" aria-expanded="false">
+              Show more <span aria-hidden="true">&#9662;</span>
+            </button>
           </div>
         </div>
       </div>
@@ -436,6 +442,42 @@
         });
       }
 
+      function initSectionCollapsibles() {
+        const toggles = document.querySelectorAll('[data-collapse-toggle]');
+
+        toggles.forEach(function(toggle) {
+          const targetId = toggle.getAttribute('data-target');
+          const target = document.getElementById(targetId);
+          if (!target) return;
+
+          const previewCount = parseInt(target.getAttribute('data-preview-count') || '3', 10);
+          const items = Array.from(target.querySelectorAll('.collapsible-item'));
+          let expanded = false;
+
+          if (items.length <= previewCount) {
+            toggle.style.display = 'none';
+            return;
+          }
+
+          function render() {
+            items.forEach(function(item, idx) {
+              item.classList.toggle('is-collapsed-item', !expanded && idx >= previewCount);
+            });
+            toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+            toggle.innerHTML = expanded
+              ? 'Show less <span aria-hidden="true">&#9652;</span>'
+              : 'Show more <span aria-hidden="true">&#9662;</span>';
+          }
+
+          toggle.addEventListener('click', function() {
+            expanded = !expanded;
+            render();
+          });
+
+          render();
+        });
+      }
+
       function initImageLightbox() {
         const lightbox = document.getElementById('imageLightbox');
         const lightboxImage = document.getElementById('lightboxImage');
@@ -511,6 +553,7 @@
       }
 
       initCarousels();
+      initSectionCollapsibles();
       initImageLightbox();
 
       if ('IntersectionObserver' in window) {

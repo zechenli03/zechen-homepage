@@ -246,6 +246,7 @@ body.theme-luka .social-icons {
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
+  margin-bottom: 8px;
 }
 
 body.theme-luka .social-icons a {
@@ -268,17 +269,17 @@ body.theme-luka .social-icons a:hover {
 }
 
 body.theme-luka .visitor-card {
-  margin: 40px auto 0;
+  margin: 52px auto 0;
   width: 240px;
-  padding: 18px 16px;
-  border: 1px dashed var(--luka-border);
+  padding: 22px 20px 24px;
+  border: 0.8px dashed rgba(194, 113, 79, 0.16);
   border-radius: 14px;
   color: var(--luka-secondary);
   text-align: left;
 }
 
 body.theme-luka .visitor-card-title {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   font-size: 13px;
   font-weight: 600;
   color: var(--luka-accent);
@@ -288,7 +289,12 @@ body.theme-luka .visitor-card-title {
 
 body.theme-luka .visitor-card-body {
   font-size: 13px;
-  line-height: 1.6;
+  line-height: 1.72;
+  margin: 0;
+}
+
+[data-theme="dark"] body.theme-luka .visitor-card {
+  border-color: rgba(226, 138, 103, 0.2);
 }
 
 body.theme-luka .visitor-map-link {
@@ -347,6 +353,10 @@ body.theme-luka .card {
   background: transparent;
   padding: 0;
   box-shadow: none;
+}
+
+body.theme-luka #education .section-body .card + .card {
+  margin-top: 14px;
 }
 
 body.theme-luka .timeline-item {
@@ -638,6 +648,26 @@ body.theme-luka .pub-content .periodical {
 body.theme-luka .pub-content .links a {
   font-size: 13px;
   font-weight: 500;
+}
+
+body.theme-luka .is-collapsed-item {
+  display: none !important;
+}
+
+body.theme-luka .collapse-toggle {
+  margin-top: 2px;
+  border: none;
+  background: transparent;
+  padding: 4px 0;
+  color: var(--luka-secondary);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+body.theme-luka .collapse-toggle:hover {
+  color: var(--luka-accent);
 }
 
 body.theme-luka .awards-grid {
