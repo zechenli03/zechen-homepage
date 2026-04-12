@@ -687,8 +687,12 @@ body.theme-luka .publications ol.bibliography {
 
 body.theme-luka .publications .pub-note {
   margin: 0 0 10px;
-  font-size: 10px;
-  color: rgba(140, 133, 119, 0.62);
+  font-size: 11px;
+  color: rgba(140, 133, 119, 0.58);
+}
+
+[data-theme="dark"] body.theme-luka .publications .pub-note {
+  color: rgba(155, 148, 136, 0.66);
 }
 
 body.theme-luka .publications ol.bibliography li {
@@ -767,24 +771,40 @@ body.theme-luka .collapse-toggle:hover {
 body.theme-luka .awards-grid {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0;
 }
 
 body.theme-luka .award-item {
+  position: relative;
   display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 4px 0;
+  align-items: flex-start;
+  gap: 0;
+  padding: 8px 0 8px 14px;
+  border-left: 2px solid var(--luka-border);
+}
+
+body.theme-luka .award-item + .award-item {
+  margin-top: 4px;
 }
 
 body.theme-luka .award-icon {
-  flex-shrink: 0;
-  font-size: 20px;
+  display: none;
 }
 
 body.theme-luka .award-text {
   color: var(--luka-text);
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+body.theme-luka .award-date {
+  margin-left: 4px;
+  color: rgba(140, 133, 119, 0.58);
+  font-size: 11px;
+}
+
+[data-theme="dark"] body.theme-luka .award-date {
+  color: rgba(155, 148, 136, 0.66);
 }
 
 body.theme-luka .site-footer {
