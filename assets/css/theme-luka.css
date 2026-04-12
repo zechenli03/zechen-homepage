@@ -270,7 +270,7 @@ body.theme-luka .social-icons a:hover {
 
 body.theme-luka .visitor-card {
   margin: 52px auto 0;
-  width: 240px;
+  width: 272px;
   padding: 22px 20px 24px;
   border: 0.8px dashed rgba(194, 113, 79, 0.16);
   border-radius: 14px;
@@ -359,6 +359,33 @@ body.theme-luka #education .section-body .card + .card {
   margin-top: 14px;
 }
 
+body.theme-luka .news-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body.theme-luka .news-item {
+  margin: 0;
+  padding: 10px 0 10px 14px;
+  border-left: 2px solid var(--luka-border);
+}
+
+body.theme-luka .news-item + .news-item {
+  margin-top: 6px;
+}
+
+body.theme-luka .news-text {
+  color: var(--luka-text);
+  font-size: 14px;
+}
+
+body.theme-luka .news-date {
+  margin-left: 6px;
+  color: var(--luka-secondary);
+  font-size: 12px;
+}
+
 body.theme-luka .timeline-item {
   position: relative;
   margin-left: 20px;
@@ -430,6 +457,25 @@ body.theme-luka .exp-title {
 body.theme-luka .exp-detail {
   font-size: 14px;
   color: var(--luka-secondary);
+}
+
+body.theme-luka .course-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 4px 0 2px;
+}
+
+body.theme-luka .course-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--luka-border);
+  background: var(--luka-social-bg);
+  color: var(--luka-secondary);
+  font-size: 12px;
+  line-height: 1.2;
 }
 
 body.theme-luka .exp-period {
@@ -620,6 +666,12 @@ body.theme-luka .publications ol.bibliography {
   margin: 0;
 }
 
+body.theme-luka .publications .pub-note {
+  margin: 0 0 10px;
+  font-size: 11px;
+  color: rgba(140, 133, 119, 0.78);
+}
+
 body.theme-luka .publications ol.bibliography li {
   margin-bottom: 14px;
   padding: 15px 0 15px 16px;
@@ -645,9 +697,32 @@ body.theme-luka .pub-content .periodical {
   font-size: 14px;
 }
 
+body.theme-luka .pub-content .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
 body.theme-luka .pub-content .links a {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border: 1px solid var(--luka-border);
+  border-radius: 999px;
+  color: var(--luka-secondary);
+  line-height: 1.2;
+}
+
+body.theme-luka .pub-content .links a:hover {
+  color: var(--luka-accent);
+  border-color: var(--luka-accent);
+}
+
+body.theme-luka .pub-content .pub-extra {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--luka-secondary);
 }
 
 body.theme-luka .is-collapsed-item {
