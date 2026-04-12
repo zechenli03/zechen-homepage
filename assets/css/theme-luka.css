@@ -115,6 +115,37 @@ body.theme-luka .nav-left a {
   font-weight: 600;
 }
 
+body.theme-luka .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+body.theme-luka .cv-top-link {
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--luka-accent) !important;
+  border: 1px solid var(--luka-border);
+  background: var(--luka-social-bg);
+  transition: transform 0.2s ease, filter 0.2s ease, border-color 0.2s ease;
+}
+
+body.theme-luka .cv-top-link:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.05);
+  border-color: var(--luka-accent);
+}
+
+body.theme-luka .cv-top-link i {
+  font-size: 13px;
+}
+
 body.theme-luka .theme-toggle {
   border: none;
   background: transparent;
@@ -656,6 +687,16 @@ body.theme-luka strong {
 }
 
 @media (max-width: 640px) {
+  body.theme-luka .cv-top-link {
+    height: 34px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  body.theme-luka .cv-top-text {
+    display: none;
+  }
+
   body.theme-luka .life-grid {
     grid-template-columns: 1fr;
   }
