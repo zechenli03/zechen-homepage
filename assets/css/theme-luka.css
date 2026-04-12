@@ -298,26 +298,34 @@ body.theme-luka .visitor-card-body {
 }
 
 body.theme-luka .visitor-card-title.collab-title {
-  text-transform: none;
-  letter-spacing: 0.02em;
-  margin-bottom: 10px;
+  text-transform: none !important;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--luka-text);
 }
 
 body.theme-luka .collab-keywords {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  column-gap: 6px;
+  row-gap: 4px;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.45;
+  color: var(--luka-secondary);
 }
 
 body.theme-luka .collab-keywords span {
-  display: inline-flex;
-  align-items: center;
-  padding: 3px 8px;
-  border-radius: 999px;
-  border: 1px solid var(--luka-border);
-  color: var(--luka-secondary);
-  font-size: 12px;
-  line-height: 1.2;
+  position: relative;
+  padding-right: 10px;
+}
+
+body.theme-luka .collab-keywords span:not(:last-child)::after {
+  content: "·";
+  position: absolute;
+  right: -1px;
+  color: rgba(140, 133, 119, 0.72);
 }
 
 body.theme-luka .content {
