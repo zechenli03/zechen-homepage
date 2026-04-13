@@ -285,11 +285,12 @@ body.theme-luka .social-icons a:hover {
 
 body.theme-luka .visitor-card {
   margin: 52px auto 0;
-  width: 304px;
+  width: 100%;
+  max-width: 280px;
   padding: 14px 16px 16px;
-  border: 1px solid var(--luka-border);
+  border: 1px dashed var(--luka-border);
   border-radius: 14px;
-  background: var(--luka-panel-bg);
+  background: var(--luka-bg);
   color: var(--luka-secondary);
   text-align: left;
 }
